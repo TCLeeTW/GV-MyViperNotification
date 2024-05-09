@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		934B41892BEC558A00C83B55 /* MyViperNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41882BEC558A00C83B55 /* MyViperNotificationApp.swift */; };
-		934B418B2BEC558A00C83B55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B418A2BEC558A00C83B55 /* ContentView.swift */; };
-		934B418D2BEC558B00C83B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934B418C2BEC558B00C83B55 /* Assets.xcassets */; };
-		934B41912BEC558B00C83B55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934B41902BEC558B00C83B55 /* Preview Assets.xcassets */; };
+		934B41A42BEC573B00C83B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41A32BEC573B00C83B55 /* AppDelegate.swift */; };
+		934B41A62BEC573B00C83B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41A52BEC573B00C83B55 /* SceneDelegate.swift */; };
+		934B41AD2BEC573B00C83B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934B41AC2BEC573B00C83B55 /* Assets.xcassets */; };
+		934B41B02BEC573B00C83B55 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 934B41AF2BEC573B00C83B55 /* Base */; };
+		934B41B92BEC59D400C83B55 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41B82BEC59D400C83B55 /* View.swift */; };
+		934B41BB2BEC59DB00C83B55 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41BA2BEC59DB00C83B55 /* Interactor.swift */; };
+		934B41BD2BEC59DE00C83B55 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41BC2BEC59DE00C83B55 /* Presenter.swift */; };
+		934B41BF2BEC59E500C83B55 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41BE2BEC59E500C83B55 /* Router.swift */; };
+		934B41C12BEC59EC00C83B55 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B41C02BEC59EC00C83B55 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		934B41852BEC558A00C83B55 /* MyViperNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyViperNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		934B41882BEC558A00C83B55 /* MyViperNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViperNotificationApp.swift; sourceTree = "<group>"; };
-		934B418A2BEC558A00C83B55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		934B418C2BEC558B00C83B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		934B418E2BEC558B00C83B55 /* MyViperNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyViperNotification.entitlements; sourceTree = "<group>"; };
-		934B41902BEC558B00C83B55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		934B41A02BEC573B00C83B55 /* MyViperNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyViperNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934B41A32BEC573B00C83B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		934B41A52BEC573B00C83B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		934B41AC2BEC573B00C83B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		934B41AF2BEC573B00C83B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		934B41B12BEC573B00C83B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934B41B82BEC59D400C83B55 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		934B41BA2BEC59DB00C83B55 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		934B41BC2BEC59DE00C83B55 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		934B41BE2BEC59E500C83B55 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		934B41C02BEC59EC00C83B55 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		934B41822BEC558A00C83B55 /* Frameworks */ = {
+		934B419D2BEC573B00C83B55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,52 +43,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		934B417C2BEC558A00C83B55 = {
+		934B41972BEC573B00C83B55 = {
 			isa = PBXGroup;
 			children = (
-				934B41872BEC558A00C83B55 /* MyViperNotification */,
-				934B41862BEC558A00C83B55 /* Products */,
+				934B41A22BEC573B00C83B55 /* MyViperNotification */,
+				934B41A12BEC573B00C83B55 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		934B41862BEC558A00C83B55 /* Products */ = {
+		934B41A12BEC573B00C83B55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				934B41852BEC558A00C83B55 /* MyViperNotification.app */,
+				934B41A02BEC573B00C83B55 /* MyViperNotification.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		934B41872BEC558A00C83B55 /* MyViperNotification */ = {
+		934B41A22BEC573B00C83B55 /* MyViperNotification */ = {
 			isa = PBXGroup;
 			children = (
-				934B41882BEC558A00C83B55 /* MyViperNotificationApp.swift */,
-				934B418A2BEC558A00C83B55 /* ContentView.swift */,
-				934B418C2BEC558B00C83B55 /* Assets.xcassets */,
-				934B418E2BEC558B00C83B55 /* MyViperNotification.entitlements */,
-				934B418F2BEC558B00C83B55 /* Preview Content */,
+				934B41B72BEC59BE00C83B55 /* VIPER */,
+				934B41A32BEC573B00C83B55 /* AppDelegate.swift */,
+				934B41A52BEC573B00C83B55 /* SceneDelegate.swift */,
+				934B41AC2BEC573B00C83B55 /* Assets.xcassets */,
+				934B41AE2BEC573B00C83B55 /* LaunchScreen.storyboard */,
+				934B41B12BEC573B00C83B55 /* Info.plist */,
 			);
 			path = MyViperNotification;
 			sourceTree = "<group>";
 		};
-		934B418F2BEC558B00C83B55 /* Preview Content */ = {
+		934B41B72BEC59BE00C83B55 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				934B41902BEC558B00C83B55 /* Preview Assets.xcassets */,
+				934B41B82BEC59D400C83B55 /* View.swift */,
+				934B41BA2BEC59DB00C83B55 /* Interactor.swift */,
+				934B41BC2BEC59DE00C83B55 /* Presenter.swift */,
+				934B41C02BEC59EC00C83B55 /* Entity.swift */,
+				934B41BE2BEC59E500C83B55 /* Router.swift */,
 			);
-			path = "Preview Content";
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		934B41842BEC558A00C83B55 /* MyViperNotification */ = {
+		934B419F2BEC573B00C83B55 /* MyViperNotification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 934B41942BEC558B00C83B55 /* Build configuration list for PBXNativeTarget "MyViperNotification" */;
+			buildConfigurationList = 934B41B42BEC573B00C83B55 /* Build configuration list for PBXNativeTarget "MyViperNotification" */;
 			buildPhases = (
-				934B41812BEC558A00C83B55 /* Sources */,
-				934B41822BEC558A00C83B55 /* Frameworks */,
-				934B41832BEC558A00C83B55 /* Resources */,
+				934B419C2BEC573B00C83B55 /* Sources */,
+				934B419D2BEC573B00C83B55 /* Frameworks */,
+				934B419E2BEC573B00C83B55 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -86,25 +101,25 @@
 			);
 			name = MyViperNotification;
 			productName = MyViperNotification;
-			productReference = 934B41852BEC558A00C83B55 /* MyViperNotification.app */;
+			productReference = 934B41A02BEC573B00C83B55 /* MyViperNotification.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		934B417D2BEC558A00C83B55 /* Project object */ = {
+		934B41982BEC573B00C83B55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					934B41842BEC558A00C83B55 = {
+					934B419F2BEC573B00C83B55 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 934B41802BEC558A00C83B55 /* Build configuration list for PBXProject "MyViperNotification" */;
+			buildConfigurationList = 934B419B2BEC573B00C83B55 /* Build configuration list for PBXProject "MyViperNotification" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,42 +127,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 934B417C2BEC558A00C83B55;
-			productRefGroup = 934B41862BEC558A00C83B55 /* Products */;
+			mainGroup = 934B41972BEC573B00C83B55;
+			productRefGroup = 934B41A12BEC573B00C83B55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				934B41842BEC558A00C83B55 /* MyViperNotification */,
+				934B419F2BEC573B00C83B55 /* MyViperNotification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		934B41832BEC558A00C83B55 /* Resources */ = {
+		934B419E2BEC573B00C83B55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934B41912BEC558B00C83B55 /* Preview Assets.xcassets in Resources */,
-				934B418D2BEC558B00C83B55 /* Assets.xcassets in Resources */,
+				934B41AD2BEC573B00C83B55 /* Assets.xcassets in Resources */,
+				934B41B02BEC573B00C83B55 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		934B41812BEC558A00C83B55 /* Sources */ = {
+		934B419C2BEC573B00C83B55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934B418B2BEC558A00C83B55 /* ContentView.swift in Sources */,
-				934B41892BEC558A00C83B55 /* MyViperNotificationApp.swift in Sources */,
+				934B41BD2BEC59DE00C83B55 /* Presenter.swift in Sources */,
+				934B41B92BEC59D400C83B55 /* View.swift in Sources */,
+				934B41BF2BEC59E500C83B55 /* Router.swift in Sources */,
+				934B41C12BEC59EC00C83B55 /* Entity.swift in Sources */,
+				934B41BB2BEC59DB00C83B55 /* Interactor.swift in Sources */,
+				934B41A42BEC573B00C83B55 /* AppDelegate.swift in Sources */,
+				934B41A62BEC573B00C83B55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		934B41AE2BEC573B00C83B55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934B41AF2BEC573B00C83B55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		934B41922BEC558B00C83B55 /* Debug */ = {
+		934B41B22BEC573B00C83B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -199,16 +230,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		934B41932BEC558B00C83B55 /* Release */ = {
+		934B41B32BEC573B00C83B55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,83 +287,64 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		934B41952BEC558B00C83B55 /* Debug */ = {
+		934B41B52BEC573B00C83B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MyViperNotification/MyViperNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyViperNotification/Preview Content\"";
 				DEVELOPMENT_TEAM = 79E68ZK73C;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = MyViperNotification/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.geovision.MyViperNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		934B41962BEC558B00C83B55 /* Release */ = {
+		934B41B62BEC573B00C83B55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MyViperNotification/MyViperNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyViperNotification/Preview Content\"";
 				DEVELOPMENT_TEAM = 79E68ZK73C;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = MyViperNotification/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.geovision.MyViperNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,25 +354,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		934B41802BEC558A00C83B55 /* Build configuration list for PBXProject "MyViperNotification" */ = {
+		934B419B2BEC573B00C83B55 /* Build configuration list for PBXProject "MyViperNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				934B41922BEC558B00C83B55 /* Debug */,
-				934B41932BEC558B00C83B55 /* Release */,
+				934B41B22BEC573B00C83B55 /* Debug */,
+				934B41B32BEC573B00C83B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		934B41942BEC558B00C83B55 /* Build configuration list for PBXNativeTarget "MyViperNotification" */ = {
+		934B41B42BEC573B00C83B55 /* Build configuration list for PBXNativeTarget "MyViperNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				934B41952BEC558B00C83B55 /* Debug */,
-				934B41962BEC558B00C83B55 /* Release */,
+				934B41B52BEC573B00C83B55 /* Debug */,
+				934B41B62BEC573B00C83B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 934B417D2BEC558A00C83B55 /* Project object */;
+	rootObject = 934B41982BEC573B00C83B55 /* Project object */;
 }
