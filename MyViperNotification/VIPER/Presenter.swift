@@ -24,6 +24,7 @@ protocol AnyPresenter{
     var interactor:AnyInteractor?{get set}
     var view: AnyView?{get set}
     func interactorDidFetchUsers(with result:Result<[User],Error>)
+    func interactorDidCheckAppVersion(with result:Result<Updateable,Error>)
 }
 
 // 針對UserPresenter我們希望這個object 一定要有的fucntion（這樣其他人可以直接call）的，列在這裏
@@ -36,18 +37,36 @@ class UserPresenter: AnyPresenter {
     var router: AnyRouter?
     var interactor: AnyInteractor?{didSet{
         
-        interactor?.getUsers()
+        interactor?.checkVersion()
+//        interactor?.getUsers()
     }}
     var view:  AnyView?
     
     
+    func interactorDidCheckAppVersion(with result: Result<Updateable, any Error>) {
+        switch result{
+        case .success(let updateable):
+            switch updateable{
+            case .latest:
+                interactor?.getUsers()
+            case .suggested:
+                interactor?.getUsers()
+                view?.showUpdateMessage(with: updateable)
+            case .required:
+                view?.showUpdateMessage(with: updateable)
+            }
+        case .failure:
+            view?.showUpdateMessage(with:"Fail to check version")
+            
+        }
+    }
     
     func interactorDidFetchUsers(with result: Result<[User], any Error>) {
         switch result{
         case .success(let users):
-            view?.update(with: users)
+            view?.updateUser(with: users)
         case .failure:
-            view?.update(with: "Fail to update user")
+            view?.updateUser(with: "Fail to update user")
         }
         //
     }

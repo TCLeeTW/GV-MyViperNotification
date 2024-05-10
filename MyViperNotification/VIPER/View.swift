@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SafariServices
 /*
  View 是一個 Viewcontroller，去控制各個view
  他有一套自己的 Protocol
@@ -16,8 +17,11 @@ import UIKit
 
 protocol AnyView{
     var presenter:AnyPresenter?{get set}
-    func update(with user:[User])
-    func update(with error:String)
+    func updateUser(with user:[User])
+    func updateUser(with error:String)
+    func showUpdateMessage(with updatable:Updateable)
+    func showUpdateMessage(with error:String)
+    
 }
 
 
@@ -54,7 +58,7 @@ class UserViewController:UIViewController,AnyView{
         label.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
         label.center = view.center
     }
-    func update(with user: [User]) {
+    func updateUser(with user: [User]) {
         print("Successfully get user")
         DispatchQueue.main.async {
             self.users = user
@@ -66,7 +70,7 @@ class UserViewController:UIViewController,AnyView{
         //
     }
     
-    func update(with error: String) {
+    func updateUser(with error: String) {
         
         DispatchQueue.main.async{
             self.label.text = error
@@ -77,6 +81,44 @@ class UserViewController:UIViewController,AnyView{
             
         //
         print(error)
+    }
+    
+    func showUpdateMessage(with updatable:Updateable){
+        var message:String!
+       
+            switch updatable{
+            case .latest:
+                return
+            case .suggested:
+                message = "Update available. Please update to get the best experience."
+                
+            case .required:
+                message = "Update required. Please update before continue using the app."
+            }
+        
+        let alertController = UIAlertController(title: "Update Available", message: message, preferredStyle: .alert)
+        let update = UIAlertAction(title: "Update", style: .default) { _ in
+            if let url = URL(string: "https://apps.apple.com/us/app/gv-eye/id427126976") {
+                       let safariViewController = SFSafariViewController(url: url)
+                self.present(safariViewController, animated: true)
+                   }
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        alertController.addAction(update)
+        alertController.addAction(cancel)
+        
+        DispatchQueue.main.async{
+            
+            self.present(alertController, animated: true)
+        }
+        
+    }
+    
+    func showUpdateMessage(with error : String){
+        self.label.text = error
+        self.label.isHidden = false
+        self.users = []
+        self.tableview.isHidden = true
     }
     
     

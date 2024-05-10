@@ -12,3 +12,8 @@ import Foundation
 struct User:Codable{
     let name:String
 }
+enum Updateable:String,Codable{
+    case required="required"
+    case suggested="suggested"
+    case latest="latest"
+}

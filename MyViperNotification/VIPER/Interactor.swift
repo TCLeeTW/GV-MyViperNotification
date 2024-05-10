@@ -22,6 +22,7 @@ import Foundation
 protocol AnyInteractor{
     var presenter:AnyPresenter?{get set}
     func getUsers()
+    func checkVersion()
 }
 
 class UserInteractor:AnyInteractor{
@@ -45,6 +46,38 @@ class UserInteractor:AnyInteractor{
             }
         }
         task.resume()
+        
+    }
+    
+    func checkVersion(){
+        //TODO: 完成version api call
+        guard let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+              let url = URL(string: "https://us-central1-tc-testing-server.cloudfunctions.net/api/checkVersion")
+        else{
+            print("Invalid URL in check version")
+            return
+        }
+        let queryItem = URLQueryItem(name: "version", value: currentVersion)
+        let finalURL = url.appending(queryItems: [queryItem])
+        print("final URL: ",finalURL)
+        var request = URLRequest(url: finalURL)
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) {[weak self] data, _, error in
+            guard let data = data,error==nil else{
+                print("Get version error: ",error!)
+                return
+            }
+            let result = String(data: data, encoding: .utf8)
+            guard let updateStatus = Updateable(rawValue: result!) else {
+                   print("Invalid update status received: ",result)
+                   return
+               }
+            self?.presenter?.interactorDidCheckAppVersion(with:.success(updateStatus))
+         
+        }
+        task.resume()
+        
+        print("Version: ",currentVersion )
         
     }
     
