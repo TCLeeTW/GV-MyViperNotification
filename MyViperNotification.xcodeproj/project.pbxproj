@@ -30,6 +30,7 @@
 		934B41BC2BEC59DE00C83B55 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		934B41BE2BEC59E500C83B55 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		934B41C02BEC59EC00C83B55 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		934B41C22BEDAB7400C83B55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		934B41972BEC573B00C83B55 = {
 			isa = PBXGroup;
 			children = (
+				934B41C22BEDAB7400C83B55 /* README.md */,
 				934B41A22BEC573B00C83B55 /* MyViperNotification */,
 				934B41A12BEC573B00C83B55 /* Products */,
 			);
